@@ -3,7 +3,10 @@
  * Shared config across vociferous.ai and vociferous.nyc
  */
 (function () {
-  var PH_KEY  = 'phc_QVqqcAnIzLttVd0RqyjTMRF2wJdeDZ8bbHux2pO1kYN';
+  // Public PostHog project token for browser analytics — not a secret.
+  // phc_ keys are write-only ingestion tokens safe for client-side use.
+  // See: https://posthog.com/docs/libraries/js#installation
+  var PH_KEY  = 'phc_QVqqcAnIzLttVd0RqyjTMRF2wJdeDZ8bbHux2pO1kYN'; // posthog-project-api-key:public
   var PH_HOST = 'https://us.i.posthog.com';
 
   var hostname = location.hostname;
